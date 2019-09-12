@@ -350,13 +350,6 @@ div[class^="btn-"],
           width: 80%;
         }
       }
-      //   &-info {
-      //     grid-area: info;
-      //     text-align: center;
-      //     background-color: rgba(36, 44, 66, 0.1);
-      //     padding: 1rem;
-      //     width: 300px;
-      //   }
     }
   }
 }
@@ -374,7 +367,7 @@ div[class^="btn-"],
         input,
         select {
           padding: 0.5rem;
-          border: 1px $dark-color solid;
+          border: 2px $light-color solid;
           border-radius: 5px;
           margin: 2rem;
         }
@@ -426,6 +419,58 @@ div[class^="btn-"],
             border-radius: 0 0 5px 5px;
           }
         }
+      }
+    }
+  }
+}
+
+//Book Details Sections
+#bdetails {
+  //Book Section A
+  &-a {
+    .bdetails-content {
+      display: grid;
+      grid-template-areas:
+        "main main chatime"
+        "main main author"
+        "main main popular"
+        "main main genres";
+
+      grid-gap: 2.5rem;
+      //align-items: baseline;
+      justify-content: center;
+      text-align: left;
+      //border: 3px solid $main-color;
+      padding: 1rem 6rem;
+      border-radius: 5px;
+
+      .bdetails-main {
+        grid-area: main;
+        background: $light-color;
+        min-width: 850px;
+        h2 {
+          font-size: 1.5rem;
+          display: block;
+          padding-bottom: 0.5rem;
+          font-weight: 100;
+          text-transform: uppercase;
+        }
+      }
+      .bdetails-chatime {
+        grid-area: chatime;
+        background: $main-color;
+      }
+      .bdetails-author {
+        grid-area: author;
+        background: $main-color;
+      }
+      .bdetails-popular {
+        grid-area: popular;
+        background: $main-color;
+      }
+      .bdetails-genres {
+        grid-area: genres;
+        background: $main-color;
       }
     }
   }
