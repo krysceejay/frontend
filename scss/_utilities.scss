@@ -1,0 +1,217 @@
+.container {
+  max-width: $website-width;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+//Buttons
+%btn-shared {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none !important;
+  box-shadow: none;
+}
+
+.btn {
+  &-main {
+    @extend %btn-shared;
+    color: #f4f4f4;
+    background-color: $main-color;
+  }
+  &-sec {
+    @extend %btn-shared;
+    color: #f4f4f4;
+    background-color: #3a4155;
+  }
+  &-lighten {
+    @extend %btn-shared;
+    color: #333;
+    background-color: $light-color;
+  }
+  &-dark {
+    @extend %btn-shared;
+    color: #f4f4f4;
+    background-color: $dark-color;
+  }
+  &:focus {
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background-color: set-btn-hover-color($light-color);
+  color: set-text-color($light-color);
+  box-shadow: none;
+  outline: none;
+  z-index: 0;
+}
+
+button[class^="btn-"]:focus,
+a[class^="btn-"]:focus,
+input[class^="btn-"]:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+//Backgrouds
+.bg {
+  &-main {
+    background: $main-color;
+    color: set-text-color($main-color);
+  }
+  &-dark {
+    background: $dark-color;
+    color: set-text-color($dark-color);
+  }
+  &-lighten {
+    background: $light-color;
+    color: set-text-color($light-color);
+  }
+  &-medium {
+    background: $medium-color;
+    color: set-text-color($medium-color);
+  }
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+form {
+  input,
+  select,
+  textarea {
+    border: 1px $light-color solid;
+  }
+}
+// input,
+// textarea,
+// select {
+//   padding: 12px;
+//   border: 1px #ddd solid;
+// }
+// input:focus,
+// textarea:focus,
+// select:focus {
+//   outline: none;
+// }
+
+//Padding
+.py {
+  &-1 {
+    padding: 1rem 0 !important;
+  }
+  &-2 {
+    padding: 2rem 0 !important;
+  }
+  &-3 {
+    padding: 3rem 0 !important;
+  }
+  &-4 {
+    padding: 4rem 0 !important;
+  }
+}
+
+//Margin
+.my {
+  &-1 {
+    margin: 1rem 0 !important;
+  }
+  &-2 {
+    margin: 2rem 0 !important;
+  }
+  &-3 {
+    margin: 3rem 0 !important;
+  }
+  &-4 {
+    margin: 4rem 0 !important;
+  }
+}
+
+%overlay {
+  background-color: $overlay-color;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.text-primary {
+  color: $main-color !important;
+}
+
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+// Star Color
+.fill {
+  color: $star-color;
+}
+.nofill {
+  color: #ccc;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: $main-color !important;
+  box-shadow: none;
+}
+
+.paginate-links {
+  &-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    li {
+      a {
+        border-radius: 0;
+        padding: 0.6rem 1rem;
+        margin: auto 0.1rem;
+        border: rgba(0, 0, 0, 0.1) 0.5px solid;
+        &:hover,
+        &.current {
+          background-color: $main-color;
+          color: $light-color;
+        }
+      }
+    }
+  }
+}
+
+.sorting {
+  button {
+    padding: 0.4rem 1rem;
+  }
+}
+
+//   .bottom-line {
+//     height: 2px;
+//     width: 3rem;
+//     background: $main-color;
+//     display: block;
+//     margin: 0 auto 1rem auto;
+//   }

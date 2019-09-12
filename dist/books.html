@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Fontawesome -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Catamaran&display=swap"
+      rel="stylesheet"
+    />
+    <!-- /End Google Font -->
+
+    <!-- Bootstrap css-->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+
+    <!-- / End Bootstrap -->
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/main.min.css" />
+    <title>Bookclub: Books</title>
+  </head>
+  <body>
+    <nav id="main-nav">
+      <!-- <img src="img/logo.png" alt="My Portfolio" id="logo" /> -->
+      <h1 class="logo"><span class="text-primary">My</span>Logo</h1>
+      <ul class="main-nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="books.html" class="current">Book</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="menu-wrap">
+        <input type="checkbox" class="toggler" />
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html" class="current">Books</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="book-cat">
+      <div class="pandsort">
+        <form>
+          <div class="sort-form">
+            <select name="cars">
+              <option value="">All genre</option>
+              <option value="saab">Saab</option>
+              <option value="fiat">Fiat</option>
+              <option value="audi">Audi</option>
+            </select>
+            <select name="cars">
+              <option value="">All genre</option>
+              <option value="saab">Saab</option>
+              <option value="fiat">Fiat</option>
+              <option value="audi">Audi</option>
+            </select>
+            <input type="text" placeholder="title" />
+          </div>
+
+          <div class="sort-submit">
+            <button class="btn-main" type="submit">
+              <i class="fa fa-search fa-2x"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Section A: All books -->
+    <section id="book-a" class="text-center py-4">
+      <!-- <p class="lead">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <div class="btn-group sorting">
+                      <button
+                        type="button"
+                        class="btn-lighten dropdown-toggle"
+                        data-toggle="dropdown"
+                        data-display="static"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        Sort By Genres
+                      </button>
+                      <div
+                        class="dropdown-menu dropdown-menu-right dropdown-menu-lg-right"
+                      >
+                        <button class="dropdown-item" type="button">Action</button>
+                        <button class="dropdown-item" type="button">
+                          Another action
+                        </button>
+                        <button class="dropdown-item" type="button">
+                          Something else here
+                        </button>
+                      </div>
+                    </div> -->
+
+      <div class="container">
+        <h2 class="section-title">
+          <span class="text-primary">All</span> Books
+        </h2>
+        <p class="lead">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <div class="all-books">
+          <div class="all-books-content">
+            <div class="all-books-img">
+              <img src="img/courses-1.jpg" alt="image" />
+            </div>
+            <div class="all-books-text">
+              <h3>Awesome Title</h3>
+              <p>By Admin | 17 Sept 2015</p>
+              <p>56| 78</p>
+              <p>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="nofill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+              </p>
+              <p class="all-books-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit...
+              </p>
+            </div>
+            <div class="link-btn">
+              <a href="#" class="btn-sec">View Details</a>
+            </div>
+          </div>
+          <div class="all-books-content">
+            <div class="all-books-img">
+              <img src="img/courses-1.jpg" alt="image" />
+            </div>
+            <div class="all-books-text">
+              <h3>Awesome Title</h3>
+              <p>By Admin | 17 Sept 2015</p>
+              <p>56| 78</p>
+              <p>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="nofill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+              </p>
+              <p class="all-books-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit...
+              </p>
+            </div>
+            <div class="link-btn">
+              <a href="#" class="btn-sec">View Details</a>
+            </div>
+          </div>
+          <div class="all-books-content">
+            <div class="all-books-img">
+              <img src="img/courses-1.jpg" alt="image" />
+            </div>
+            <div class="all-books-text">
+              <h3>Awesome Title</h3>
+              <p>By Admin | 17 Sept 2015</p>
+              <p>56| 78</p>
+              <p>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="nofill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+              </p>
+              <p class="all-books-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit...
+              </p>
+            </div>
+            <div class="link-btn">
+              <a href="#" class="btn-sec">View Details</a>
+            </div>
+          </div>
+          <div class="all-books-content">
+            <div class="all-books-img">
+              <img src="img/smoke.jpeg" alt="image" />
+            </div>
+            <div class="all-books-text">
+              <h3>Awesome Title</h3>
+              <p>By Admin | 17 Sept 2015</p>
+              <p>56| 78</p>
+              <p>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="nofill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+              </p>
+              <p class="all-books-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit...
+              </p>
+            </div>
+            <div class="link-btn">
+              <a href="#" class="btn-sec">View Details</a>
+            </div>
+          </div>
+          <div class="all-books-content">
+            <div class="all-books-img">
+              <img src="img/the-way.jpg" alt="image" />
+            </div>
+            <div class="all-books-text">
+              <h3>Awesome Title</h3>
+              <p>By Admin | 17 Sept 2015</p>
+              <p>56| 78</p>
+              <p>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="nofill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+              </p>
+              <p class="all-books-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit...
+              </p>
+            </div>
+            <div class="link-btn">
+              <a href="#" class="btn-sec">View Details</a>
+            </div>
+          </div>
+          <div class="all-books-content">
+            <div class="all-books-img">
+              <img src="img/tessoftheroad.jpeg" alt="image" />
+            </div>
+            <div class="all-books-text">
+              <h3>Awesome Title</h3>
+              <p>By Admin | 17 Sept 2015</p>
+              <p>56| 78</p>
+              <p>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="nofill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+              </p>
+              <p class="all-books-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit...
+              </p>
+            </div>
+            <div class="link-btn">
+              <a href="#" class="btn-sec">View Details</a>
+            </div>
+          </div>
+          <div class="all-books-content">
+            <div class="all-books-img">
+              <img src="img/courses-1.jpg" alt="image" />
+            </div>
+            <div class="all-books-text">
+              <h3>Awesome Title Good Available More Text</h3>
+              <p>By Admin | 17 Sept 2015</p>
+              <p>56| 78</p>
+              <p>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="nofill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+              </p>
+              <p class="all-books-desc"></p>
+            </div>
+            <div class="link-btn">
+              <a href="#" class="btn-sec">View Details</a>
+            </div>
+          </div>
+          <div class="all-books-content">
+            <div class="all-books-img">
+              <img src="img/thecrowgirl.jpeg" alt="image" />
+            </div>
+            <div class="all-books-text">
+              <h3>Awesome Title</h3>
+              <p>By Admin | 17 Sept 2015</p>
+              <p>56| 78</p>
+              <p>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="nofill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+              </p>
+              <p class="all-books-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit...
+              </p>
+            </div>
+            <div class="link-btn">
+              <a href="#" class="btn-sec">View Details</a>
+            </div>
+          </div>
+          <div class="all-books-content">
+            <div class="all-books-img">
+              <img src="img/courses-1.jpg" alt="image" />
+            </div>
+            <div class="all-books-text">
+              <h3>Awesome Title</h3>
+              <p>By Admin | 17 Sept 2015</p>
+              <p>56| 78</p>
+              <p>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="fill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+                <span class="nofill"
+                  ><i class="fa fa-star" aria-hidden="true"></i
+                ></span>
+              </p>
+              <p class="all-books-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit...
+              </p>
+            </div>
+            <div class="link-btn">
+              <a href="#" class="btn-sec">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="paginate-links my-4">
+          <ul class="paginate-links-menu">
+            <li class="">
+              <a href="#" class="btn-lighten">Pre</a>
+            </li>
+            <li class=""><a href="#" class="btn-lighten current">1</a></li>
+            <li class=""><a href="#" class="btn-lighten">2</a></li>
+            <li class=""><a href="#" class="btn-lighten">3</a></li>
+            <li class=""><a href="#" class="btn-lighten">4</a></li>
+            <li class=""><a href="#" class="btn-lighten">5</a></li>
+            <li class=""><a href="#" class="btn-lighten">Next</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- / End Section A -->
+
+    <!-- Footer -->
+    <footer id="main-footer" class="py-4">
+      <div class="footer-content container">
+        <div>
+          <h2>Lorem ipsum dolor sit.</h2>
+          <a href="www.twitter.com">
+            <i class="fa fa-twitter fa-2x"></i>
+          </a>
+          <a href="www.facebook.com">
+            <i class="fa fa-facebook fa-2x"></i>
+          </a>
+          <a href="www.youtube.com">
+            <i class="fa fa-youtube fa-2x"></i>
+          </a>
+        </div>
+        <div>
+          <h3>Company Info</h3>
+          <ul>
+            <li>
+              <a href="#"><i class="fa fa-angle-right"></i>All Product</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-angle-right"></i>About Us</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-angle-right"></i>Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-angle-right"></i>Terms Of Service</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Blog Posts</h3>
+          <ul>
+            <li><a href="#">Lorem ipsum dolor sit.</a></li>
+            <li><a href="#">Lorem ipsum dolor sit.</a></li>
+            <li><a href="#">Lorem ipsum dolor sit.</a></li>
+            <li><a href="#">Lorem ipsum dolor sit.</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Subscribe</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+          <form name="email-form" method="POST">
+            <div class="email-form">
+              <span class="form-control-wrap">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  size="40"
+                  class="form-sub"
+                  placeholder="Email"
+                />
+              </span>
+              <button type="submit" class="form-sub submit">
+                <i class="fa fa-chevron-right"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <!-- /End Footer -->
+
+    <!-- Bootstrap Js -->
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/bootstrap.min.js"></script> -->
+    <!-- /End Bootstrap Js -->
+  </body>
+</html>
