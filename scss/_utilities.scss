@@ -11,7 +11,7 @@
   padding: 0.8rem 2rem;
   transition: all 0.5s;
   cursor: pointer;
-  border-radius: 5px;
+  //border-radius: 5px;
   text-decoration: none !important;
   box-shadow: none;
 }
@@ -95,19 +95,21 @@ form {
   select,
   textarea {
     border: 1px $light-color solid;
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  label {
+    display: block;
+    font-size: 1.1rem;
   }
 }
-// input,
-// textarea,
-// select {
-//   padding: 12px;
-//   border: 1px #ddd solid;
-// }
-// input:focus,
-// textarea:focus,
-// select:focus {
-//   outline: none;
-// }
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border: 1px $main-color solid;
+}
 
 //Padding
 .py {
@@ -154,6 +156,10 @@ form {
 
 .text-primary {
   color: $main-color !important;
+}
+.sidebar-cat-text {
+  font-weight: 700;
+  margin-right: 2rem;
 }
 
 .section-title {
@@ -208,6 +214,16 @@ form {
   }
 }
 
+.book-sidebar-heading {
+  background: $sec-fade-color;
+  color: set-text-color($secondary-color);
+  padding: 1rem;
+}
+.book-sidebar-content {
+  background: $light-color;
+  padding: 1rem;
+  border-radius: 0 0 5px 5px;
+}
 //   .bottom-line {
 //     height: 2px;
 //     width: 3rem;

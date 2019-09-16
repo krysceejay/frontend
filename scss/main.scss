@@ -45,7 +45,7 @@ img {
   width: 100%;
 }
 p {
-  margin: 0.5rem 0;
+  margin: 0.3rem 0;
 }
 
 .menu-wrap {
@@ -432,22 +432,24 @@ div[class^="btn-"],
       display: grid;
       grid-template-areas:
         "main main chatime"
-        "main main author"
-        "main main popular"
-        "main main genres";
+        "main main popular";
+      //grid-template-columns: repeat(2, 1fr);
 
       grid-gap: 2.5rem;
-      //align-items: baseline;
       justify-content: center;
-      text-align: left;
-      //border: 3px solid $main-color;
-      padding: 1rem 6rem;
+      text-align: center;
+      //align-items: center;
+      padding: 1rem;
       border-radius: 5px;
 
       .bdetails-main {
         grid-area: main;
-        background: $light-color;
-        min-width: 850px;
+        //background: $light-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 660px;
+        width: 600px;
         h2 {
           font-size: 1.5rem;
           display: block;
@@ -455,26 +457,69 @@ div[class^="btn-"],
           font-weight: 100;
           text-transform: uppercase;
         }
+        .bdetails-img {
+          //border: $main-color 1px solid;
+          // align-items: flex-start;
+          height: 450px;
+          width: 350px;
+          margin-right: 2rem;
+          margin-bottom: 2rem;
+
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+          }
+        }
+        .bdetails-rest {
+          text-align: left;
+        }
       }
       .bdetails-chatime {
         grid-area: chatime;
-        background: $main-color;
-      }
-      .bdetails-author {
-        grid-area: author;
-        background: $main-color;
+
+        .chat-btn {
+          a {
+            padding: 0.5rem 2rem;
+            margin: 2rem auto;
+            &:hover {
+              background: $main-color;
+            }
+          }
+        }
       }
       .bdetails-popular {
         grid-area: popular;
-        background: $main-color;
-      }
-      .bdetails-genres {
-        grid-area: genres;
-        background: $main-color;
+        .toprated-sidebar {
+          &-single {
+            display: flex;
+            //justify-content: center;
+            border-bottom: $medium-color 0.5px dotted;
+            padding: 0.5rem;
+            &:last-child {
+              border-bottom: 0;
+            }
+            .pop-img {
+              img {
+                border-radius: 50%;
+                height: 4.5rem;
+                width: 4.5rem;
+                object-fit: cover;
+                margin-right: 1rem;
+              }
+            }
+            .pop-content {
+              text-align: left;
+            }
+          }
+        }
       }
     }
   }
 }
+
+//Import media query
+@import "dashboard";
 
 //Footer
 #main-footer {
