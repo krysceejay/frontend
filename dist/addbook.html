@@ -56,7 +56,7 @@
       <aside id="dashboard-main-aside">
         <ul>
           <a href="#"><li>Dashboard</li></a>
-          <a href="#"><li>Manage Books</li></a>
+          <a href="managebook.html"><li>Manage Books</li></a>
           <a href="addbook.html" class="current"><li>Add Book</li></a>
           <a href="#"><li>Dashboard</li></a>
           <a href="#"><li>Dashboard</li></a>
@@ -73,8 +73,8 @@
               Lorem ipsum dolor sit amet.
             </p>
             <div class="field">
-              <div class="field-form">
-                <form>
+              <form>
+                <div class="field-form">
                   <div class="form-group">
                     <label for="title">Title</label>
                     <input
@@ -94,26 +94,41 @@
                     />
                   </div>
                   <div class="form-group">
+                    <label for="author">Download Link</label>
                     <input
-                      type="phone"
-                      name="phone"
-                      id="phone"
-                      placeholder="Enter phone"
+                      type="text"
+                      name="link"
+                      id="link"
+                      placeholder="Enter Download Link"
                     />
                   </div>
                   <div class="form-group">
-                    <textarea
-                      name="message"
-                      id="message"
-                      placeholder="Enter message"
-                    ></textarea>
+                    <label for="author">Genre</label>
+                    <select name="genre" id="genre" multiple>
+                      <option value="action">Action</option>
+                      <option value="comedy">Comedy</option>
+                      <option value="romance">Romance</option>
+                    </select>
                   </div>
 
                   <div class="form-group">
-                    <button type="submit" class="btn btn-dark">Submit</button>
+                    <label for="author">Bookcover</label>
+                    <input type="file" name="bookcover" id="bookcover" />
                   </div>
-                </form>
-              </div>
+
+                  <div class="form-group">
+                    <label for="author">Description</label>
+                    <textarea
+                      name="description"
+                      id="description"
+                      placeholder="Enter Description"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-dark">Submit</button>
+                </div>
+              </form>
             </div>
           </div>
           <!-- / End Section A -->

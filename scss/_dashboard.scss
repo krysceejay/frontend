@@ -8,6 +8,7 @@
     //border: 1px $main-color solid;
     padding: 1rem 0;
     //width: 230px;
+    min-height: 60vh;
     font-size: 1.1rem;
     li {
       border-bottom: 1px $medium-color dotted;
@@ -26,24 +27,23 @@
     .dashboard-addbook {
       .field {
         &-form {
-          form {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 2rem;
-            .form-group {
-              margin-bottom: 20px;
-              display: block;
-              input,
-              textarea {
-                width: 100%;
-              }
-              .btn {
-                width: 25%;
-                text-align: center;
-              }
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 2rem;
+          .form-group {
+            margin-bottom: 10px;
+            display: block;
+            input,
+            textarea,
+            select {
+              width: 100%;
             }
           }
         }
+      }
+      .btn {
+        width: 25%;
+        text-align: center;
       }
     }
   }

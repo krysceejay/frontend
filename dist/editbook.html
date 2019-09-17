@@ -56,39 +56,82 @@
       <aside id="dashboard-main-aside">
         <ul>
           <a href="#"><li>Dashboard</li></a>
-          <a href="managebook.html"><li>Manage Books</li></a>
-          <a href="addbook.html"><li>Add Book</li></a>
+          <a href="#"><li>Manage Books</li></a>
+          <a href="addbook.html" class="current"><li>Add Book</li></a>
           <a href="#"><li>Dashboard</li></a>
           <a href="#"><li>Dashboard</li></a>
         </ul>
       </aside>
       <section id="dashboard-main-section">
         <div class="container">
-          <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iste
-            fugit ipsam distinctio rem corporis corrupti facilis possimus quasi
-            pariatur! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Quas, placeat ea quae natus voluptas quidem ratione aut obcaecati
-            earum quibusdam fugiat veniam consequuntur magni asperiores harum ab
-            nisi perspiciatis illo? Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quod iste fugit ipsam distinctio rem corporis
-            corrupti facilis possimus quasi pariatur! Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Quas, placeat ea quae natus voluptas
-            quidem ratione aut obcaecati earum quibusdam fugiat veniam
-            consequuntur magni asperiores harum ab nisi perspiciatis illo? nisi
-            perspiciatis illo? Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quod iste fugit ipsam distinctio rem corporis
-            corrupti facilis possimus quasi pariatur! Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Quas, placeat ea quae natus voluptas
-            quidem ratione aut obcaecati earum quibusdam fugiat veniam
-            consequuntur magni asperiores harum ab nisi perspiciatis illo? nisi
-            perspiciatis illo? Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quod iste fugit ipsam distinctio rem corporis
-            corrupti facilis possimus quasi pariatur! Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Quas, placeat ea quae natus voluptas
-            quidem ratione aut obcaecati earum quibusdam fugiat veniam
-            consequuntur magni asperiores harum ab nisi perspiciatis illo?
+          <!-- Section: Add book -->
+          <div class="dashboard-addbook" class="text-center py-4">
+            <h2 class="section-title">
+              <span class="text-primary">Edit</span> Book
+            </h2>
+            <p class="lead">
+              Lorem ipsum dolor sit amet.
+            </p>
+            <div class="field">
+              <form>
+                <div class="field-form">
+                  <div class="form-group">
+                    <label for="title">Title</label>
+                    <input
+                      type="text"
+                      name="title"
+                      id="title"
+                      placeholder="Enter Title"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="author">Author</label>
+                    <input
+                      type="text"
+                      name="author"
+                      id="author"
+                      placeholder="Enter Author"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="author">Download Link</label>
+                    <input
+                      type="text"
+                      name="link"
+                      id="link"
+                      placeholder="Enter Download Link"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="author">Genre</label>
+                    <select name="genre" id="genre" multiple>
+                      <option value="action">Action</option>
+                      <option value="comedy">Comedy</option>
+                      <option value="romance">Romance</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="author">Bookcover</label>
+                    <input type="file" name="bookcover" id="bookcover" />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="author">Description</label>
+                    <textarea
+                      name="description"
+                      id="description"
+                      placeholder="Enter Description"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-dark">Submit</button>
+                </div>
+              </form>
+            </div>
           </div>
+          <!-- / End Section A -->
         </div>
       </section>
     </main>

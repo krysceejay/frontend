@@ -99,6 +99,17 @@ form {
     font-size: 1rem;
   }
 
+  span {
+    display: inline-block;
+  }
+
+  // select[multiple] {
+  //   border-style: inset;
+  //   -moz-appearance: menulist;
+  //   -webkit-appearance: menulist;
+  //   appearance: menulist;
+  // }
+
   label {
     display: block;
     font-size: 1.1rem;
@@ -162,13 +173,17 @@ select:focus {
   margin-right: 2rem;
 }
 
-.section-title {
+.section-title,
+.section-title-dash {
   font-size: 2rem;
   display: block;
   padding-bottom: 0.5rem;
-  text-align: center;
   font-weight: 100;
   text-transform: uppercase;
+}
+
+.section-title {
+  text-align: center;
 }
 
 // Star Color
@@ -215,15 +230,43 @@ select:focus {
 }
 
 .book-sidebar-heading {
-  background: $sec-fade-color;
-  color: set-text-color($secondary-color);
-  padding: 1rem;
+  h3 {
+    color: #444444;
+    font-weight: bolder;
+
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: capitalize;
+  }
 }
 .book-sidebar-content {
   background: $light-color;
   padding: 1rem;
-  border-radius: 0 0 5px 5px;
+  border-radius: 5px;
 }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: $sec-fade-color;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: $light-color;
+}
+
 //   .bottom-line {
 //     height: 2px;
 //     width: 3rem;
