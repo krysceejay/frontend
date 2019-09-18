@@ -245,6 +245,23 @@ select:focus {
   border-radius: 5px;
 }
 
+// Dashboard
+.dashboard-main-section-head {
+  background: $light-color;
+  //box-shadow: 0 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 0 0.5px rgba(0, 0, 0, 0.2);
+  h3 {
+    font-size: 1.6rem;
+    color: $dark-color;
+    text-transform: capitalize;
+    align-items: center;
+    padding: 1rem 1.5rem;
+  }
+}
+.dashboard-main-section-content {
+  padding: 2rem;
+}
+
 table {
   border-collapse: collapse;
   width: 100%;

@@ -55,44 +55,48 @@
     <main id="dashboard-main">
       <aside id="dashboard-main-aside">
         <ul>
-          <a href="#"><li>Dashboard</li></a>
-          <a href="managebook.html"><li>Manage Books</li></a>
-          <a href="addbook.html"><li>Add Book</li></a>
-          <a href="#"><li>Dashboard</li></a>
-          <a href="#"><li>Dashboard</li></a>
+          <a href="dashboard.html"
+            ><li><i class="fa fa-dashboard"></i> Dashboard</li></a
+          >
+          <a href="managebook.html"
+            ><li><i class="fa fa-book"></i> Manage Books</li></a
+          >
         </ul>
       </aside>
       <section id="dashboard-main-section">
-        <!-- Section: Add book -->
-        <div class="dashboard-managebook" class="py-4">
-          <h2 class="section-title-dash">
-            <span class="text-primary">Manage</span> Book
-          </h2>
-          <!-- <p class="lead">
-            Lorem ipsum dolor sit amet.
-          </p> -->
-          <div>
+        <div class="dashboard-main-section-head">
+          <h3>Manage Book</h3>
+        </div>
+        <!-- Section: Manage book -->
+        <div class="dashboard-main-section-content">
+          <div class="dashboard-managebook">
             <table>
               <tr>
                 <th>Cover</th>
                 <th>Title</th>
                 <th>Author</th>
-                <th>Link</th>
                 <th>Publish</th>
                 <th>Added Date</th>
                 <th>Action</th>
               </tr>
               <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
-                <td>Alfreds Futterkiste</td>
+                <td>
+                  <div class="manage-img-cover">
+                    <img
+                      class="manage-img-cover-img"
+                      src="img/the-way.jpg"
+                      alt="Cover"
+                    />
+                  </div>
+                </td>
+                <td>Tess Of The Road</td>
+                <td>Emily Jackson</td>
                 <td>Maria Anders</td>
                 <td>Germany</td>
                 <td><button class="btn btn-dark">View Details</button></td>
               </tr>
               <tr>
-                <td>Alfreds Futterkiste</td>
+                <td>Alfreds</td>
                 <td>Maria Anders</td>
                 <td>Germany</td>
                 <td>Alfreds Futterkiste</td>
@@ -100,7 +104,7 @@
                 <td>Germany</td>
               </tr>
               <tr>
-                <td>Alfreds Futterkiste</td>
+                <td>Alfreds</td>
                 <td>Maria Anders</td>
                 <td>Germany</td>
                 <td>Alfreds Futterkiste</td>
@@ -113,74 +117,6 @@
       </section>
     </main>
     <!-- / End Section A -->
-
-    <!-- Footer -->
-    <footer id="main-footer" class="py-4">
-      <div class="footer-content container">
-        <div>
-          <h2>Lorem ipsum dolor sit.</h2>
-          <a href="www.twitter.com">
-            <i class="fa fa-twitter fa-2x"></i>
-          </a>
-          <a href="www.facebook.com">
-            <i class="fa fa-facebook fa-2x"></i>
-          </a>
-          <a href="www.youtube.com">
-            <i class="fa fa-youtube fa-2x"></i>
-          </a>
-        </div>
-        <div>
-          <h3>Company Info</h3>
-          <ul>
-            <li>
-              <a href="#"><i class="fa fa-angle-right"></i>All Product</a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-angle-right"></i>About Us</a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-angle-right"></i>Privacy Policy</a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-angle-right"></i>Terms Of Service</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3>Blog Posts</h3>
-          <ul>
-            <li><a href="#">Lorem ipsum dolor sit.</a></li>
-            <li><a href="#">Lorem ipsum dolor sit.</a></li>
-            <li><a href="#">Lorem ipsum dolor sit.</a></li>
-            <li><a href="#">Lorem ipsum dolor sit.</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Subscribe</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p>
-          <form name="email-form" method="POST">
-            <div class="email-form">
-              <span class="form-control-wrap">
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  size="40"
-                  class="form-sub"
-                  placeholder="Email"
-                />
-              </span>
-              <button type="submit" class="form-sub submit">
-                <i class="fa fa-chevron-right"></i>
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </footer>
-    <!-- /End Footer -->
 
     <!-- Bootstrap Js -->
   </body>
