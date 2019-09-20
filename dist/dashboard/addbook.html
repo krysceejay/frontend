@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Fontawesome -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Catamaran&display=swap"
+      rel="stylesheet"
+    />
+    <!-- /End Google Font -->
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="../css/main.min.css" />
+    <title>Bookclub: Dashboard</title>
+  </head>
+  <body>
+    <main id="dashboard-main">
+      <!-- Sidebar -->
+      <aside id="dashboard-main-aside">
+        <ul>
+          <a href="dashboard.html"
+            ><li><i class="fa fa-dashboard"></i> Dashboard</li></a
+          >
+          <a href="managebook.html"
+            ><li><i class="fa fa-book"></i> Manage Books</li></a
+          >
+          <a href="addbook.html"
+            ><li><i class="fa fa-book"></i> Add Books</li></a
+          >
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Section A: Dashboard Home -->
+      <section id="dashboard-main-section">
+        <nav id="dashboard-main-nav">
+          <div class="header_top">
+            <div class="top_right">
+              <ul>
+                <li><a href="contact.html">Home</a></li>
+                |
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="top_left">
+              <div class="nav-img">
+                <img src="../img/the-way.jpg" alt="proimage" />
+              </div>
+              <!-- <form action="">
+                <button type="submit" class="">Log Out</button>
+              </form> -->
+            </div>
+          </div>
+        </nav>
+
+        <div class="dashboard-main-section-content">
+          <h3 class="dashboard-content-header">Add Book</h3>
+          <div class="dashboard-addbook">
+            <div class="field">
+              <form>
+                <div class="field-form">
+                  <div class="form-group">
+                    <label for="title">Title</label>
+                    <input
+                      type="text"
+                      name="title"
+                      id="title"
+                      placeholder="Enter Title"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="author">Author</label>
+                    <input
+                      type="text"
+                      name="author"
+                      id="author"
+                      placeholder="Enter Author"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="author">Genre</label>
+                    <select name="genre" id="genre" multiple>
+                      <option value="action">Action</option>
+                      <option value="comedy">Comedy</option>
+                      <option value="romance">Romance</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="author">Bookcover</label>
+                    <input type="file" name="bookcover" id="bookcover" />
+                  </div>
+                  <div class="form-group">
+                    <label for="title">Meeting Date</label>
+                    <input type="date" name="date" id="date" />
+                  </div>
+                  <div class="form-group">
+                    <label for="author">Time</label>
+
+                    <input type="time" name="time" />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="author">Description</label>
+                    <textarea
+                      name="description"
+                      id="description"
+                      placeholder="Enter Description"
+                    ></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="author">Publish</label>
+                    <input type="radio" name="age" value="1" /> Yes
+                    <input type="radio" name="age" value="0" /> No
+                  </div>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-dark">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- / End Section A -->
+
+    <!-- Bootstrap Js -->
+  </body>
+</html>

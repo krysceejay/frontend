@@ -97,6 +97,11 @@ form {
     border: 1px $light-color solid;
     padding: 12px;
     font-size: 1rem;
+    height: 50px;
+  }
+
+  textarea {
+    height: 100px;
   }
 
   span {
@@ -113,6 +118,7 @@ form {
   label {
     display: block;
     font-size: 1.1rem;
+    color: $sec-fade-color;
   }
 }
 input:focus,
@@ -246,20 +252,18 @@ select:focus {
 }
 
 // Dashboard
-.dashboard-main-section-head {
-  background: $light-color;
-  //box-shadow: 0 3px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 3px 0 0.5px rgba(0, 0, 0, 0.2);
-  h3 {
-    font-size: 1.6rem;
-    color: $dark-color;
-    text-transform: capitalize;
-    align-items: center;
-    padding: 1rem 1.5rem;
-  }
+.dashboard-content-header {
+  color: $sec-fade-color;
+  text-transform: capitalize;
+  font-size: 24px;
+  margin: 0 1rem 1rem 0;
 }
 .dashboard-main-section-content {
+  margin: 2rem;
   padding: 2rem;
+  background: $light-color;
+  box-shadow: 2px 3px 5px 0.5px rgba(0, 0, 0, 0.2);
+  //box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 table {
