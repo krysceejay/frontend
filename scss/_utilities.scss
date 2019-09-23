@@ -193,11 +193,10 @@ select:focus {
 }
 
 // Star Color
-.fill {
+.fill,
+.nofill,
+.half-fill {
   color: $star-color;
-}
-.nofill {
-  color: #ccc;
 }
 
 .form-control:focus {
@@ -286,6 +285,11 @@ th {
 
 tr:nth-child(even) {
   background-color: $light-color;
+}
+
+// Chat
+.chat-head-section {
+  // padding: 1.3rem ;
 }
 
 //   .bottom-line {
