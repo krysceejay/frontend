@@ -50,7 +50,7 @@
       &-online-users {
         background: #fff;
         flex: 1;
-        height: 92vh;
+        height: 90vh;
         max-width: 360px;
         border-radius: 5px;
         //text-align: center;
@@ -62,18 +62,19 @@
           height: 40px;
           border-radius: 5px;
           margin-bottom: 1.3rem;
-          &:focus {
-            border: 1px $light-color solid;
-          }
+          //   &:focus {
+          //     border: 1px $light-color solid;
+          //   }
         }
         .online-users-list {
-          height: 85vh;
+          //margin: 2rem 0;
+          height: 76vh;
           overflow: scroll;
           .single-user-details {
             display: flex;
             align-items: center;
             padding: 0.8rem 0;
-            border-bottom: 1px $light-color dotted;
+            border-bottom: 2px $light-color dotted;
             &:last-child {
               border-bottom: 0;
             }
@@ -101,8 +102,109 @@
       &-area {
         background: $light-color;
         flex: 2;
-        height: 92vh;
-        padding: 1.3rem;
+        height: 90vh;
+        padding: 0 2rem;
+        overflow: hidden;
+
+        .chat-area-head {
+          display: flex;
+          align-items: center;
+          padding-bottom: 1.2rem;
+          border-bottom: 2px #e1e1e1 solid;
+          .book-cover {
+            flex: 1;
+            width: 60px;
+            height: 60px;
+            margin-right: 1rem;
+
+            img {
+              border-radius: 50%;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .book-details-text {
+            flex: 9;
+            text-transform: capitalize;
+            font-weight: 900;
+          }
+        }
+        .chat-area-body {
+          margin: 2rem 0;
+          height: 66vh;
+          overflow: scroll;
+          border-bottom: 2px #e1e1e1 solid;
+          &-receiver {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: "receiver . .";
+            grid-gap: 2rem;
+            margin: 1rem;
+            .msg-receiver {
+              grid-area: receiver;
+              &-name {
+                font-size: 0.8rem;
+              }
+              &-text {
+                background: #fff;
+                padding: 0.6rem 1rem;
+                border-radius: 0 15px 15px 15px;
+              }
+            }
+          }
+          &-sender {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: ". . sender";
+            grid-gap: 2rem;
+            margin: 1rem;
+            .msg-sender {
+              grid-area: sender;
+              &-text {
+                background: #cdcdcd;
+                padding: 0.6rem 1rem;
+                border-radius: 15px 15px 0 15px;
+              }
+            }
+          }
+        }
+        .chat-area-input {
+          form {
+            background: $dark-color;
+            width: 100%;
+            border-radius: 5px;
+            input {
+              width: 90%;
+              height: 50px;
+              outline: none;
+              border: none;
+              border-radius: 5px 0 0 5px;
+              &:focus {
+                outline: none;
+              }
+            }
+            .send-btn {
+              width: 40px;
+              height: 40px;
+              background: $dark-color;
+              color: $light-color;
+              border-radius: 50%;
+              border: none;
+              box-shadow: none;
+
+              &:focus {
+                box-shadow: none;
+                border: none;
+                outline: none;
+              }
+
+              .fa {
+                font-size: 1.5rem;
+              }
+            }
+          }
+        }
       }
       &-bookdetails {
         background: #fff;
