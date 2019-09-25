@@ -67,13 +67,13 @@
           //   }
         }
         .online-users-list {
-          //margin: 2rem 0;
+          //   margin-bottom: 1.3rem;
           height: 76vh;
           overflow: scroll;
           .single-user-details {
             display: flex;
             align-items: center;
-            padding: 0.8rem 0;
+            padding: 1rem 0;
             border-bottom: 2px $light-color dotted;
             &:last-child {
               border-bottom: 0;
@@ -113,7 +113,7 @@
           border-bottom: 2px #e1e1e1 solid;
           .book-cover {
             flex: 1;
-            width: 60px;
+            max-width: 60px;
             height: 60px;
             margin-right: 1rem;
 
@@ -140,7 +140,7 @@
             grid-template-columns: repeat(3, 1fr);
             grid-template-areas: "receiver . .";
             grid-gap: 2rem;
-            margin: 1rem;
+            margin: 1rem 0;
             .msg-receiver {
               grid-area: receiver;
               &-name {
@@ -158,7 +158,7 @@
             grid-template-columns: repeat(3, 1fr);
             grid-template-areas: ". . sender";
             grid-gap: 2rem;
-            margin: 1rem;
+            margin: 1rem 0;
             .msg-sender {
               grid-area: sender;
               &-text {
@@ -209,8 +209,24 @@
       &-bookdetails {
         background: #fff;
         flex: 1;
-        height: 92vh;
+        height: 90vh;
+        max-width: 360px;
         border-radius: 5px;
+        padding: 1.3rem;
+        overflow: hidden;
+        .book-chat-anchor {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-content: center;
+          text-align: center;
+          height: 100px;
+
+          &-img {
+            background: #f53ba3;
+            width: 50%;
+          }
+        }
       }
     }
   }

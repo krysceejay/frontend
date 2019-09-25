@@ -288,8 +288,23 @@ tr:nth-child(even) {
 }
 
 // Chat
+// .chat-head-section {
+//   margin-bottom: 1.3rem;
+// }
 .chat-head-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 1.3rem;
+
+  .details-close-btn {
+    background: $medium-color;
+    border-radius: 5px;
+    padding: 0.3rem 0.7rem;
+    .fa {
+      font-size: 1.1rem;
+    }
+  }
 }
 
 .msg-chat-time {
