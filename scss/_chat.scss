@@ -54,27 +54,32 @@
         max-width: 360px;
         border-radius: 5px;
         //text-align: center;
-        padding: 1.3rem;
+        //padding: 1.3rem;
         overflow: hidden;
 
-        .search-user {
-          width: 100%;
-          height: 40px;
-          border-radius: 5px;
-          margin-bottom: 1.3rem;
-          //   &:focus {
-          //     border: 1px $light-color solid;
-          //   }
+        form {
+          padding: 0 1.3rem;
+          .search-user {
+            width: 100%;
+            height: 40px;
+            border-radius: 5px;
+            //margin-bottom: 1.3rem;
+            //   &:focus {
+            //     border: 1px $light-color solid;
+            //   }
+          }
         }
         .online-users-list {
           //   margin-bottom: 1.3rem;
+
           height: 76vh;
           overflow: scroll;
           .single-user-details {
             display: flex;
             align-items: center;
             padding: 1rem 0;
-            border-bottom: 2px $light-color dotted;
+            border-bottom: 2px $border-bottom dotted;
+            padding: 1.2rem 1.3rem;
             &:last-child {
               border-bottom: 0;
             }
@@ -212,19 +217,49 @@
         height: 90vh;
         max-width: 360px;
         border-radius: 5px;
-        padding: 1.3rem;
+        //padding: 1.3rem;
         overflow: hidden;
         .book-chat-anchor {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-content: center;
           text-align: center;
-          height: 100px;
-
+          border-bottom: 1px #e1e1e1 solid;
+          padding-bottom: 1rem;
           &-img {
-            background: #f53ba3;
-            width: 50%;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            //border-radius: 50%;
+            img {
+              border-radius: 50%;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          &-det {
+            font-size: 1.25rem;
+          }
+        }
+        .book-chat-topics {
+          &-head {
+            font-size: 1.1rem;
+            font-weight: 600;
+            //margin-top: 1rem;
+            padding: 1.3rem;
+          }
+          &-list {
+            height: 40vh;
+            overflow: scroll;
+            li {
+              border-bottom: 2px $border-bottom dotted;
+              padding: 1rem 1.3rem;
+              &:last-child {
+                border-bottom: 0;
+              }
+            }
+            .list-active {
+              border-left: 4px $main-color solid;
+              background: $border-bottom;
+            }
           }
         }
       }
