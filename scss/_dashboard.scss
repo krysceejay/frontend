@@ -15,11 +15,32 @@
     //width: 230px;
     min-height: 100vh;
     font-size: 1.1rem;
-    li {
-      border-bottom: 1px $secondary-color dotted;
+    .main-aside-li {
+      //border-bottom: 1px $secondary-color dotted;
       padding: 1rem 2rem;
       color: set-text-color($sec-fade-color);
+      position: relative;
+      cursor: pointer;
       //margin-bottom: 0.5rem;
+      ul {
+        display: none;
+      }
+      &:hover ul {
+        display: block;
+        position: absolute;
+        left: 3rem;
+        margin-top: 1rem;
+
+        li:hover {
+          a {
+            color: $main-color;
+          }
+        }
+      }
+      a {
+        color: set-text-color($sec-fade-color);
+      }
+
       i {
         margin-right: 1rem;
         color: #f53ba3;
