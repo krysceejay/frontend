@@ -86,6 +86,17 @@ input[class^="btn-"]:focus {
   text-align: center;
 }
 
+.parent-sub-menu {
+  .nav-sub-menu {
+    display: none;
+  }
+
+  &:hover ul {
+    display: block;
+    background: $sec-fade-color;
+  }
+}
+
 .text-center {
   text-align: center;
 }
@@ -285,6 +296,10 @@ th {
 
 tr:nth-child(even) {
   background-color: $light-color;
+}
+
+.form-error {
+  text-align: left !important;
 }
 
 // Chat
